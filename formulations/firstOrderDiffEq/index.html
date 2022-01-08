@@ -12,8 +12,14 @@
 </head>
 
 <body>
-    <canvas id="myChart" width="400" height="400"></canvas>
-    <script src="firstOrderDiffEq.js"></script>
+    <p>EQ: <input id='eq_ip' type="text" placeholder="Enter Equation"><br></p>
+    <p>X1: <input id='x1_ip' type="text" placeholder="Enter Intial X value"><br></p>
+    <p>Y1: <input id='y1_ip' type="text" placeholder="Enter the Initial Y value"><br></p>
+    <p>Xn: <input id='xn_ip' type="text" placeholder="Enter the Initial Y value"><br></p>
+    <p>h : <input id='h_ip' type="text" placeholder="Enter the increment of X:"><br></p>
+    <button type="submit" id="sub_but">Submit</button>
+    <canvas id="myChart" class="chart-container" width="400" height="400" aria-label="hello Aria" role="img"></canvas>
+    <script src="app.js"></script>
 </body>
 
 </html>
