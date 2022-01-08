@@ -9,7 +9,7 @@ sub_but.addEventListener('click', () => {
     y1 = y1.value
     xn = xn.value
     h = h.value
-    Euler(x1.value, y1.value)
+    Euler(x1, y1, xn, h)
 })
 
 function Euler(x1, y1, xn, h) {
