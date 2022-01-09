@@ -17,9 +17,14 @@
     <p>Y1: <input id='y1_ip' type="text" placeholder="Enter the Initial Y value"><br></p>
     <p>Xn: <input id='xn_ip' type="text" placeholder="Enter the Initial Y value"><br></p>
     <p>h : <input id='h_ip' type="text" placeholder="Enter the increment of X:"><br></p>
+    <input type="radio" name="methodName" onclick="selectMethod(1)" id="methodEuler">Euler<br>
+    <input type="radio" name="methodName" onclick="selectMethod(2)" id="method2nd">2nd degree<br>
+    <input type="radio" name="methodName" onclick="selectMethod(3)" id="method3rd">3rd degree<br>
     <button type="submit" id="sub_but">Submit</button>
     <canvas id="myChart" class="chart-container" width="400" height="400" aria-label="hello Aria" role="img"></canvas>
     <script src="app.js"></script>
 </body>
+
+</html>
 
 </html>
