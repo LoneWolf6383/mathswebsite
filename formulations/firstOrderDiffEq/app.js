@@ -13,10 +13,17 @@ sub_but.addEventListener('click', () => {
 })
 
 function Euler(x1, y1, xn, h) {
+    x1 = parseFloat(x1)
+    y1 = parseFloat(y1)
+    xn = parseFloat(xn)
+    h = parseFloat(h)
     while (x1 < xn) {
-        y1 = y1 + h * Equation(x1, y1)
+        y1 = ((y1 + h * Equation(x1, y1)) * 100) / 100
         x1 = x1 + h
-        console.log(x1, y1)
+            // x1 = Equation(x1, 1)
+            // y1 = Equation(1, y1)
+        console.log('X value:', x1)
+        console.log('Y value:', y1)
     }
 }
 
