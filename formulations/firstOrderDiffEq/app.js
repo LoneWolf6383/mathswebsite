@@ -101,20 +101,20 @@ function drawGraph() {
                 borderWidth: 2,
                 lineTension: 0
             }],
-            // options: {
-            //     scales: {
-            //         xAxes: [{
-            //             ticks: {
-            //                 beginAtZero: true
-            //             }
-            //         }],
-            //         yAxes: [{
-            //             ticks: {
-            //                 beginAtZero: true
-            //             }
-            //         }]
-            //     }
-            // }
+            options: {
+                scales: {
+                    xAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }],
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
         }
     })
 
