@@ -11,6 +11,8 @@
     <link rel="style.css" href="">
 </head>
 
+<html>
+
 <body>
     <div class="container-fluid">
         <div class="row">
@@ -32,13 +34,13 @@
         </div>
         <div class="row">
             <div class="col">
-                <input type="radio" name="methodName " onclick="selectMethod(1) " id="methodEuler ">Euler<br>
+                <input type="radio" name="methodName " onclick="selectMethod(1)" id="methodEuler ">Euler<br>
             </div>
             <div class="col">
-                <input type="radio" name="methodName " onclick="selectMethod(2) " id="method2nd ">2nd degree<br>
+                <input type="radio" name="methodName " onclick="selectMethod(2)" id="method2nd ">2nd degree<br>
             </div>
             <div class="col">
-                <input type="radio" name="methodName " onclick="selectMethod(3) " id="method3rd ">3rd degree<br>
+                <input type="radio" name="methodName " onclick="selectMethod(3)" id="method3rd ">3rd degree<br>
             </div>
         </div>
         <div class="row">
@@ -46,20 +48,16 @@
         </div>
         <div class="row">
             <div class="col">
-                <button type="button" class="btn btn-danger" id="sub_but ">Submit</button>
+                <button id="sub_but">Submit</button>
             </div>
         </div>
-        <!-- <canvas id="myChart " class="chart-container " width="400 " height="400 " aria-label="hello Aria " role="img "></canvas>
-        <script src="Euler.js"></script>
-        <script src="graph.js"></script>
-        <script src="R2.js"></script>
-        <script src="R4.js"></script>
-        <script src="radioButton.js"></script>
-        <script src="variables.js"></script> -->
-        <script type="module" src="./app.js "></script>
     </div>
+    <canvas id="myChart" class="chart-container" role="img"></canvas>
+    <script src="Euler.js"></script>
+    <script src="graph.js"></script>
+    <script src="R2.js"></script>
+    <script src="R4.js"></script>
+    <script src="app.js"></script>
 </body>
-
-<html>
 
 </html>

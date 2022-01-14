@@ -1,4 +1,4 @@
-export function R2(x1, y1, xn, h) {
+function R2(x1, y1, xn, h) {
     while (x1 < xn) {
         s1 = h * Equation(x1, y1)
         s2 = h * Equation(x1 + h, y1 + s1)
