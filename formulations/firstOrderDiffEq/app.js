@@ -1,9 +1,3 @@
-// import { drawGraph } from "./graph";
-// import { R2 } from "./R2"
-// import { R4 } from "./R4"
-// // import { Euler } from "./Euler"
-// import selectMethod from "./radioButtons"
-// import { x1, y1, xn, h, eq, sub_but, x_vals, y_vals, method_name, s1, s2, s3, s4, y2, flag } from "./variables"
 var x1 = document.querySelector('#x1_ip')
 var y1 = document.querySelector('#y1_ip')
 var xn = document.querySelector('#xn_ip')
@@ -52,35 +46,3 @@ sub_but.addEventListener("click", () => {
     }
     drawGraph()
 })
-
-function drawGraph() {
-    const ch = document.querySelector('#myChart')
-    const myChart = new Chart(ch, {
-        type: 'line',
-        data: {
-            labels: x_vals,
-            datasets: [{
-                label: method_name,
-                data: y_vals,
-                borderColor: 'rgba(38,194,255,1)',
-                borderWidth: 2,
-                lineTension: 0
-            }],
-            options: {
-                scales: {
-                    xAxes: [{
-                        ticks: {
-                            beginAtZero: true
-                        }
-                    }],
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero: true
-                        }
-                    }]
-                }
-            }
-        }
-    })
-
-}

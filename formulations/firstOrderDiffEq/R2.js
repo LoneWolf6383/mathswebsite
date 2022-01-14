@@ -10,4 +10,3 @@ function R2(x1, y1, xn, h) {
         y_vals.push(y1)
     }
 }
-// export default R2

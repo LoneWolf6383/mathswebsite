@@ -13,4 +13,3 @@ function R4(x1, y1, xn, h) {
 
     }
 }
-// export default R4

@@ -1,1 +1,0 @@
-// export { x1, y1, xn, h, eq, sub_but, x_vals, y_vals, method_name, s1, s2, s3, s4, y2, flag }
