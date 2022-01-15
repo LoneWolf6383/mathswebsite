@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid p-5 text-center bg-image" style="background-image: url('https://i.pinimg.com/736x/a7/e6/bb/a7e6bb24e57f1f9b534e4f0ae4d41c92.jpg');height:auto;">
         <div class="row">
             <div class="col">
                 <p>Equation 1: <input id='f_eq_ip' type=" text " placeholder="Enter Equation dy/dx "><br></p>
@@ -41,25 +41,25 @@
             </div>
         </div>
         <div class="row">
-            <div class="col">
+            <div class="col" id="euler">
                 <input type="radio" name="methodName " onclick="selectMethod(1)" id="methodEuler ">Euler<br>
             </div>
         </div>
         <div class="row">
-            <div class="col">
+            <div class="col" id=r2>
                 <input type="radio" name="methodName " onclick="selectMethod(2)" id="method2nd ">2nd degree<br>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <ul></ul>
-    </div>
-    <div class="row">
-        <div class="col">
-            <button class="btn btn-danger" id="sub_but">Submit</button>
+        <div class="row">
+            <ul></ul>
         </div>
-        <canvas id="myChart" class="chart-container" role="img"></canvas>
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-danger" id="sub_but">Submit</button>
+            </div>
+        </div>
     </div>
+    <canvas id="myChart" class="chart-container" role="img"></canvas>
     <script src="./functions/Euler.js"></script>
     <script src="./functions/graph.js"></script>
     <script src="./functions/R2.js"></script>

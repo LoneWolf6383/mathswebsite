@@ -6,6 +6,7 @@ var h = document.querySelector('#h_ip')
 var f_eq = document.querySelector('#f_eq_ip')
 var g_eq = document.querySelector('#g_eq_ip')
 var sub_but = document.querySelector('#sub_but')
+
 var x_vals = [0]
 var y_vals = [0]
 var method_name = "None"
@@ -28,14 +29,17 @@ function selectMethod(methodName) {
 }
 
 function f(x, y, z) {
-    var equation = eval(f_eq.value)
+    console.log(f_eq.value)
+    let equation = eval(f_eq.value)
     return equation
 }
 
 function g(x, y, z) {
-    var equation = eval(g_eq.value)
+    console.log(g_eq.value)
+    let equation = eval(g_eq.value)
     return equation
 }
+
 sub_but.addEventListener("click", () => {
     x1 = parseFloat(x1.value)
     y1 = parseFloat(y1.value)
