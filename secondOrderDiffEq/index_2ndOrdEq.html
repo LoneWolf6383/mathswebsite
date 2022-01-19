@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doc</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="style.css" href="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -36,39 +36,48 @@
     <div class="container-fluid p-5 text-center bg-image" style="background-image: url('https://i.pinimg.com/736x/a7/e6/bb/a7e6bb24e57f1f9b534e4f0ae4d41c92.jpg');height:auto;">
         <div class="row">
             <div class="col">
-                <p>Equation 1: <input id='f_eq_ip' type=" text " placeholder="Enter Equation dy/dx "><br></p>
+                <p>
+                    <mark>Equation 1:</mark> <input id='f_eq_ip' type=" text " placeholder="Enter Equation dy/dx "><br></p>
             </div>
             <div class="col">
-                <p>Equation 2: <input id='g_eq_ip' type=" text " placeholder="Enter Equation dz/dx"><br></p>
+                <p>
+                    <mark>Equation 2:</mark> <input id='g_eq_ip' type=" text " placeholder="Enter Equation dz/dx"><br></p>
             </div>
             <div class="col">
-                <p>X1: <input id='x1_ip' type="text " placeholder="Enter Intial X value "><br></p>
+                <p>
+                    <mark>X1:</mark> <input id='x1_ip' type="text " placeholder="Enter Intial X value "><br></p>
             </div>
             <div class="row">
                 <div class="col">
-                    <p>Y1: <input id='y1_ip' type="text " placeholder="Enter the Initial Y value "><br></p>
+                    <p>
+                        <mark>Y1:</mark> <input id='y1_ip' type="text " placeholder="Enter the Initial Y value "><br></p>
                 </div>
                 <div class="col">
-                    <p>Z1: <input id='z1_ip' type="text " placeholder="Enter the Initial Z value "><br></p>
+                    <p>
+                        <mark>Z1:</mark> <input id='z1_ip' type="text " placeholder="Enter the Initial Z value "><br></p>
                 </div>
                 <div class="col">
-                    <p>Xn: <input id='xn_ip' type="text " placeholder="Enter the Initial Xn value "><br></p>
+                    <p>
+                        <mark>Xn:</mark> <input id='xn_ip' type="text " placeholder="Enter the Initial Xn value "><br></p>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <p>h : <input id='h_ip' type="text " placeholder="Enter the increment of X: "><br></p>
+                    <p>
+                        <mark>h :</mark> <input id='h_ip' type="text " placeholder="Enter the increment of X: "><br></p>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col" id="euler">
-                <input type="radio" name="methodName " onclick="selectMethod(1)" id="methodEuler ">Euler<br>
+                <input type="radio" name="methodName " onclick="selectMethod(1)" id="methodEuler ">
+                <mark>Euler</mark><br>
             </div>
         </div>
         <div class="row">
             <div class="col" id=r2>
-                <input type="radio" name="methodName " onclick="selectMethod(2)" id="method2nd ">2nd degree<br>
+                <input type="radio" name="methodName " onclick="selectMethod(2)" id="method2nd ">
+                <mark>2nd degree</mark><br>
             </div>
         </div>
         <div class="row">
