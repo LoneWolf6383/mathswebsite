@@ -1,0 +1,27 @@
+h1 {
+    text-align: center;
+}
+
+hr {
+    width: 50%;
+    margin-left: 25%;
+}
+
+div {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#rightArrowImg {
+    width: 3%;
+    height: 3%;
+    margin-top: 10px;
+    margin-left: -10px;
+    margin-right: 10px;
+}
+
+#simulation {
+    width: 12%;
+    height: 12%;
+    text-decoration: white;
+}
