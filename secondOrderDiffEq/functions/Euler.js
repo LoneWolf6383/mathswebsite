@@ -1,4 +1,4 @@
-function Euler(x1, y1, xn, h) {
+function Euler(x1, y1, z1, xn, h) {
     let y2 = 0.0
     let x2 = 0.0
     let z2 = 0.0

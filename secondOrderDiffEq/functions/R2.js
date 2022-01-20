@@ -1,4 +1,4 @@
-function R2(x1, y1, xn, h) {
+function R2(x1, y1, z1, xn, h) {
     while (x1 < xn) {
         sy1 = h * f(x1, y1, z1)
         sz1 = h * g(x1, y1, z1)

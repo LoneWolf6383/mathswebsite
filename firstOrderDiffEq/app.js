@@ -4,6 +4,8 @@ var xn = document.querySelector('#xn_ip')
 var h = document.querySelector('#h_ip')
 var eq = document.querySelector('#eq_ip')
 var sub_but = document.querySelector('#sub_but')
+var eulerBut = document.querySelector('#methodEuler')
+var sample_input_but = document.querySelector('#sample-inputs')
 var x_vals = [0]
 var y_vals = [0]
 var method_name = "None"
@@ -21,7 +23,6 @@ function selectMethod(methodName) {
         flag = 2
     } else if (methodName == 3) {
         flag = 3
-        a
     }
 }
 
@@ -29,11 +30,8 @@ function Equation(x, y) {
     var equation = eval(eq.value)
     return equation
 }
-sub_but.addEventListener("click", () => {
-    x1 = parseFloat(x1.value)
-    y1 = parseFloat(y1.value)
-    xn = parseFloat(xn.value)
-    h = parseFloat(xn / h.value)
+
+function Execution(x1, y1, xn, h) {
     if (flag == 1) {
         Euler(x1, y1, xn, h)
         method_name = "Euler"
@@ -45,4 +43,27 @@ sub_but.addEventListener("click", () => {
         method_name = "Runge Kutta 4th Order Method"
     }
     drawGraph()
+}
+
+sub_but.addEventListener("click", () => {
+    x1 = parseFloat(x1.value)
+    y1 = parseFloat(y1.value)
+    xn = parseFloat(xn.value)
+    h = parseFloat(xn / h.value)
+    Execution(x1, y1, xn, h)
+})
+sample_input_but.addEventListener('click', () => {
+    x1.value = 0
+    y1.value = 0.2
+    xn.value = 1
+    h.value = 5
+    eq.value = "y - x"
+    x1 = parseFloat(x1.value)
+    y1 = parseFloat(y1.value)
+    xn = parseFloat(xn.value)
+    h = parseFloat(xn / h.value)
+    eulerBut.checked = true
+    flag = 1
+    Execution(x1, y1, xn, h)
+
 })

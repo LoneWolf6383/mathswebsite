@@ -36,7 +36,7 @@
         </div>
     </nav>
 
-    <div class="container-fluid p-5 text-center bg-image" style="background-image: url('../assets/1stOrdDiffEqImag.jpg');height:auto;">
+    <div class="container-fluid p-5 text-center bg-image" style="background-image: url('../assets/1stOrdDiffEqImag.jpg');">
         <div class="row">
             <div class="col">
                 <p>
@@ -66,33 +66,34 @@
         </div>
         <div class="row">
             <div class="col">
-                <input type="radio" name="methodName " onclick="selectMethod(1)" id="methodEuler ">
+                <input type="radio" name="methodName " onclick="selectMethod(1)" id='methodEuler'>
                 <mark>Euler</mark><br>
             </div>
-            <div class="col">
-                <input type="radio" name="methodName " onclick="selectMethod(2)" id="method2nd ">
+            <div class="col ">
+                <input type="radio " name="methodName " onclick="selectMethod(2) " id="method2nd ">
                 <mark>2nd degree</mark><br>
             </div>
-            <div class="col">
-                <input type="radio" name="methodName " onclick="selectMethod(3)" id="method3rd ">
+            <div class="col ">
+                <input type="radio " name="methodName " onclick="selectMethod(3) " id="method3rd ">
                 <mark>3rd degree</mark><br>
             </div>
         </div>
-        <div class="row">
+        <div class="row ">
             <ul></ul>
         </div>
-        <div class="row">
-            <div class="col">
-                <button class="btn btn-danger" id="sub_but">Submit</button>
+        <div class="row ">
+            <div class="col ">
+                <button class="btn btn-danger " id='sub_but'>Submit</button>
+                <div class="col "><button class="btn btn-primary " id='sample-inputs'>Sample Inputs</button></div>
             </div>
         </div>
     </div>
-    <canvas id="myChart" class="chart-container" role="img"></canvas>
-    <script src="./functions/Euler.js"></script>
-    <script src="./functions/graph.js"></script>
-    <script src="./functions/R2.js"></script>
-    <script src="./functions/R4.js"></script>
-    <script src="app.js"></script>
+    <canvas id='myChart' class="chart-container " role="img "></canvas>
+    <script src="./functions/Euler.js "></script>
+    <script src="./functions/graph.js "></script>
+    <script src="./functions/R2.js "></script>
+    <script src="./functions/R4.js "></script>
+    <script src="./app.js "></script>
 </body>
 
 </html>
